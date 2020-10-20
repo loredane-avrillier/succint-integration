@@ -1,0 +1,32 @@
+* {
+    color: #1b1b1b;
+    font-family: 'Didact Gothic', sans-serif;
+}
+body {
+    margin: 1.5em;
+}
+main {
+    min-height: 90vh;
+}
+article {
+    display: flex;
+    align-items: center;
+    margin: 3em 0;
+    justify-content: space-between;
+}
+article > * {
+    max-width: 47%;
+}
+article:nth-child(even) { 
+    flex-flow: row-reverse;
+}
+
+
+@media screen and (max-width: 992px) {
+    article, article:nth-child(even) {
+        flex-direction: column;
+    }
+    article > * {
+        max-width: 100%;
+    }
+}
